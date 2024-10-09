@@ -12,7 +12,7 @@ stage('Build-and-Tag')
 {
     /* This builds the actual image;
         * this is synonymous to docker build on the command line */
-    app.docker.build('kevenmang/car_dcker_repo')
+    app = docker.build('kevenmang/car_dcker_repo')
 }
 
 stage('Post-to-dockerhub')
